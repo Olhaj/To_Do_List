@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.app_to_do_list {
+  width: 428px;
+  height: 926px;
+  border-radius: 8px;
+  border: 1px solid #fffbff;
+  background-color: #fffbff;
+  padding: 0 24px;
+}
+
+/*==================== SECTION DATA START =================*/
+.data {
+  margin: 16px 0;
+}
+
+.data > h2 {
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 4px;
+}
+
+.data > p {
+  font-weight: 400;
+  font-size: 15px;
+}
+/*==================== SECTION DATA END =====================*/
+
+/*==================== SECTION SEARCH START =================*/
+.search_input {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.search_input img {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+}
+
+.search_input input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 0 8px 16px;
+  border: 1px solid #6750a40d;
+  background-color: #6750a40d;
+  border-radius: 28px;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
