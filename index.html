@@ -63,6 +63,29 @@
             </article>
         </section>
 
+        <div id="empty" class="empty">Задач не найдено</div>
+
+        <!-- Модальное окно -->
+        <div id="addPanel" class="add-panel" aria-hidden="true">
+            <form id="addForm" class="add-form">
+                <div class="drag-handle" aria-hidden="true"></div>
+                <input id="newTask" class="form-field" type="text" placeholder="Описание" required />
+                <input id="taskDate" class="form-field" type="text" placeholder="Дата" onfocus="this.type='date'"
+                    onblur="if(!this.value)this.type='text'" />
+                <div class="reminder-row">
+                    <span>Напомнить мне</span>
+                    <label class="switch">
+                        <input id="reminder" type="checkbox" checked />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="form-actions">
+                    <button id="addBtn" class="add-btn" type="submit">Добавить</button>
+                    <button id="cancelBtn" class="cancel-btn" type="button">Отмена</button>
+                </div>
+            </form>
+        </div>
+
         <button id="fab" class="fab" aria-label="Добавить задачу"><img src="assest/icons/pen.svg" alt="Pen"></button>
     </main>
 </body>
