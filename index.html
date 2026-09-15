@@ -14,7 +14,57 @@
 </head>
 
 <body>
+    <main class="app_phone">
+        <header>
+            <h1 id="weekday">Среда</h1>
+            <div id="currentDate" class="date">3 января</div>
+        </header>
 
+        <div class="search-wrap">
+            <input id="search" class="search" type="search" placeholder="Поиск" aria-label="Поиск задач" />
+            <img class="search-icon" aria-hidden="true" src="assest/icons/magnifying_glass.svg" alt="Поиск">
+        </div>
+
+        <nav class="tabs" aria-label="Фильтр задач">
+            <button class="tab active" data-filter="all"><img class="check" src="assest/icons/Selected icon.svg"
+                    alt="Selected">Все</button>
+            <button class="tab" data-filter="active">Активные</button>
+            <button class="tab" data-filter="completed">Завершенные</button>
+        </nav>
+
+        <section id="tasks" class="tasks" aria-live="polite">
+            <article class="task done" data-status="completed">
+                <input class="task-check" type="checkbox" checked aria-label="Отметить задачу выполненной" />
+                <div class="task-copy">
+                    <div class="task-meta">10 января, 11:30</div>
+                    <div class="task-title">Покормить кошку</div>
+                </div>
+            </article>
+            <article class="task" data-status="active">
+                <input class="task-check" type="checkbox" aria-label="Отметить задачу выполненной" />
+                <div class="task-copy">
+                    <div class="task-meta">10 января, 11:30</div>
+                    <div class="task-title">Покормить кошку</div>
+                </div>
+            </article>
+            <article class="task" data-status="active">
+                <input class="task-check" type="checkbox" aria-label="Отметить задачу выполненной" />
+                <div class="task-copy">
+                    <div class="task-meta">10 января, 11:30</div>
+                    <div class="task-title">Покормить кошку</div>
+                </div>
+            </article>
+            <article class="task" data-status="active">
+                <input class="task-check" type="checkbox" aria-label="Отметить задачу выполненной" />
+                <div class="task-copy">
+                    <div class="task-meta">10 января, 11:30</div>
+                    <div class="task-title">Покормить кошку</div>
+                </div>
+            </article>
+        </section>
+
+        <button id="fab" class="fab" aria-label="Добавить задачу"><img src="assest/icons/pen.svg" alt="Pen"></button>
+    </main>
 </body>
 <script src="scripts/script.js"></script>
 
